@@ -1,0 +1,219 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 50px 20px 20px 20px; 
+  background: #f5f5f5;
+  color: #eeeeee;
+  background-image: url("6013781.jpg");
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+
+#biodata {
+  scroll-margin-top: 200px; 
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 80px 20px;
+}
+
+.navbar {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 40px;
+  background: rgba(0, 0, 0, 0.85);
+  backdrop-filter: blur(6px);
+  z-index: 1000;
+}
+
+
+.navbar .logo {
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: #f5f5f5;
+  text-decoration: none;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar .logo::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  transition: width 0.3s ease;
+}
+
+.navbar .logo:hover {
+  color: #38bdf8;
+}
+
+.navbar .logo:hover::after {
+  width: 100%;
+}
+
+.navbar .menu-links {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-right: 80px;
+}
+
+.navbar .menu-links li a {
+  color: #f3f3f3;
+  text-decoration: none;
+  font-weight: 500;
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.navbar .menu-links li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0%;
+  height: 2px;
+  background: #38bdf8;
+  transition: width 0.3s ease;
+}
+
+.navbar .menu-links li a:hover {
+  color: #38bdf8;
+}
+
+.navbar .menu-links li a:hover::after {
+  width: 100%;
+}
+
+#home {
+  padding: 80px 20px 20px 20px; 
+}
+
+.profile-box {
+  background: rgba(0, 0, 0, 0.6);
+  padding: 20px;
+  border-radius: 15px;
+  max-width: 600px;
+  margin: 20px auto;
+  color: #f5f5f5;
+}
+
+.profile-box dl {
+  margin: 0 0 20px 0;
+}
+
+.profile-box dt {
+  font-weight: 600;
+  color: #f1f1f1;
+}
+
+.profile-box dd {
+  margin: 0 0 10px 20px;
+}
+
+.profile-box .motto {
+  margin: 15px 0;
+}
+
+.profile-box .intro {
+  margin: 20px 0;
+}
+
+h1, h2 {
+  color: #f5f5f5;
+  text-align: center;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+}
+
+th, td {
+  border: 1px solid #ffffff;
+  padding: 10px;
+  text-align: center;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 0px;
+  font-size: 3rem; 
+  font-weight: 700; 
+}
+
+.profile-img {
+  display: block;
+  margin: 20px auto;
+  width: 200px;        
+  height: 200px;       
+  object-fit: cover;  
+  border-radius: 50%;  
+  border: 3px solid #ffffff;
+}
+
+
+#jadwal {
+  padding: 40px 20px;
+  text-align: center;
+  background: transparent; 
+  scroll-margin-top: 10px; 
+}
+
+#jadwal h2 {
+  font-size: 28px;
+  margin-bottom: 30px;
+  color: #f5f5f5;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.card {
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid rgba(255,255,255,0.3); 
+  background: rgba(0, 0, 0, 0.6); 
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 14px rgba(0,0,0,0.3);
+}
+
+#projects h2{
+  font-size: 28px;
+}
+
+#contact {
+  color: white;
+  text-align: center;
+}
+#contact a {
+  color: #000000;
+  text-decoration: none;
+  font-weight: bold;
+}
